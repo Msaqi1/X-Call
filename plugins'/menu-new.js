@@ -11,7 +11,7 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
-        const menuCaption = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
+        const menuCaption = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈
 ┃★╭──────────────
 ┃★│ 👑 Owner : *${config.OWNER_NAME}*
 ┃★╰──────────────
@@ -39,7 +39,7 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363348739987203@newsletter',
+                newsletterJid: '120363418942692497@newsletter',
                 newsletterName: config.OWNER_NAME,
                 serverMessageId: 143
             }
@@ -51,7 +51,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/us6qaa.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -337,7 +337,7 @@ cmd({
 ┃★│ • movie [name]
 ┃★│ • weather [loc]
 ┃★╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+╰━━━━━━━━━━━━━━━┈⊷ 
 > ${config.DESCRIPTION}`,
                 image: true
             },
@@ -418,7 +418,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/us6qaa.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
